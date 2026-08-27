@@ -8,7 +8,7 @@ public class Bowling : MonoBehaviour
 
     [SerializeField]
     private int forcePower;
-        
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -20,10 +20,28 @@ public class Bowling : MonoBehaviour
         {
             ShootBall();
         }
+
+        if (Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed)
+        {
+            MoveRight();
+        }
+
+        if (Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed)
+        {
+            MoveLeft();
+        }
     }
     private void ShootBall()
     {
         rb.AddForce(Vector3.forward * forcePower, ForceMode.Impulse);
 
+    }
+    private void MoveRight()
+    {
+       transform.position += new Vector3(1f, 0f, 0f)*Time.deltaTime;
+    }
+    private void MoveLeft()
+    {
+        transform.position += new Vector3(-1f, 0f, 0f)*Time.deltaTime;
     }
 }
