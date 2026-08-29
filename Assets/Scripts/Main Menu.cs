@@ -3,6 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        AudioManager.instance.PlayBGM(0);
+    }
+
+    void Update()
+    {
+
+    }
     public void StartNewGame()
     {
 
