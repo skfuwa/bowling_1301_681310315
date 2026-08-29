@@ -789,6 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4cccf7522ae6348b5d45aef5e7c5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  adjustPanel: {fileID: 311700799}
 --- !u!1 &560666233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,7 +1832,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: bea93a38b71b64b598109b3a3b1a0048, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2766,10 +2767,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   bgm:
   - {fileID: 292890818}
-  sfx:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   mixer: {fileID: 24100000, guid: ec0379f63736a7b43a1203dd0eafba3f, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

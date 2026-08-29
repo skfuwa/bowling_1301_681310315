@@ -6,8 +6,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     public AudioSource[] bgm;
 
-    [SerializeField]
-    private AudioSource[] sfx;
 
     [SerializeField]
     private AudioMixer mixer;
@@ -40,9 +38,5 @@ public class AudioManager : MonoBehaviour
         if (i < bgm.Length)
             bgm[i].Play();
     }
-    public void PlaySFX(int i)
-    {
-        if (i < sfx.Length)
-            sfx[i].PlayOneShot(sfx[i].clip);
-    }
+    
 }
