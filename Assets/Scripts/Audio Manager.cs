@@ -38,5 +38,8 @@ public class AudioManager : MonoBehaviour
         if (i < bgm.Length)
             bgm[i].Play();
     }
-    
+    public void AdjustMasterVolume(float volume)
+    {
+        mixer.SetFloat("master", volume);
+    }
 }
